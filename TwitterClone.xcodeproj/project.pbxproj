@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4AE4B0A22117DD3F00DCFB09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4B0A12117DD3F00DCFB09 /* AppDelegate.swift */; };
-		4AE4B0A42117DD3F00DCFB09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4B0A32117DD3F00DCFB09 /* ViewController.swift */; };
-		4AE4B0A72117DD3F00DCFB09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE4B0A52117DD3F00DCFB09 /* Main.storyboard */; };
 		4AE4B0A92117DD4400DCFB09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE4B0A82117DD4400DCFB09 /* Assets.xcassets */; };
 		4AE4B0AC2117DD4400DCFB09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE4B0AA2117DD4400DCFB09 /* LaunchScreen.storyboard */; };
+		4AE4B0B52117DDAF00DCFB09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4B0B42117DDAF00DCFB09 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4AE4B09E2117DD3F00DCFB09 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE4B0A12117DD3F00DCFB09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AE4B0A32117DD3F00DCFB09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4AE4B0A62117DD3F00DCFB09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AE4B0A82117DD4400DCFB09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AE4B0AB2117DD4400DCFB09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AE4B0AD2117DD4400DCFB09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE4B0B42117DDAF00DCFB09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +52,21 @@
 		4AE4B0A02117DD3F00DCFB09 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				4AE4B0B32117DDA000DCFB09 /* Supporting Files */,
+				4AE4B0B42117DDAF00DCFB09 /* HomeViewController.swift */,
+			);
+			path = TwitterClone;
+			sourceTree = "<group>";
+		};
+		4AE4B0B32117DDA000DCFB09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				4AE4B0A12117DD3F00DCFB09 /* AppDelegate.swift */,
-				4AE4B0A32117DD3F00DCFB09 /* ViewController.swift */,
-				4AE4B0A52117DD3F00DCFB09 /* Main.storyboard */,
 				4AE4B0A82117DD4400DCFB09 /* Assets.xcassets */,
 				4AE4B0AA2117DD4400DCFB09 /* LaunchScreen.storyboard */,
 				4AE4B0AD2117DD4400DCFB09 /* Info.plist */,
 			);
-			path = TwitterClone;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +129,6 @@
 			files = (
 				4AE4B0AC2117DD4400DCFB09 /* LaunchScreen.storyboard in Resources */,
 				4AE4B0A92117DD4400DCFB09 /* Assets.xcassets in Resources */,
-				4AE4B0A72117DD3F00DCFB09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +139,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE4B0A42117DD3F00DCFB09 /* ViewController.swift in Sources */,
 				4AE4B0A22117DD3F00DCFB09 /* AppDelegate.swift in Sources */,
+				4AE4B0B52117DDAF00DCFB09 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4AE4B0A52117DD3F00DCFB09 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AE4B0A62117DD3F00DCFB09 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4AE4B0AA2117DD4400DCFB09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -281,7 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TwitterClone/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TwitterClone/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TwitterClone/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TwitterClone/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
